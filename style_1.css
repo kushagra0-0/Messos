@@ -1,0 +1,8 @@
+
+* {
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: lightblue;
+}

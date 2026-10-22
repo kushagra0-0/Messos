@@ -6,11 +6,16 @@
     <title>Student Login Part</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="form-box login">
+    <div class="container" >
+    
+        <div class="form-box login" id="loginform">
             <form action="">
+                <img src="logo.png" alt="Site logo" class="site-logo">
                 <h1>Login</h1>
                 <div class="input-box">
                     <p>E-mail Id:</p>
@@ -21,25 +26,7 @@
                     <input type="password" placeholder="Password" required>
                 </div>
                 <button type="submit" class="btn">Login</button>
-                
-            </form>
-        </div>
-                <div class="form-box register">
-            <form action="">
-                <h1>Register</h1>
-                <div class="input-box">
-                    <p>E-mail Id:</p>
-                    <input type="email" placeholder="college e-mail id" required>
-                </div>
-                <div class="input-box">
-                    <p>Create Password:</p>
-                    <input type="password" placeholder="Create Password" required>
-                </div>
-                <div class="input-box">
-                    <p>Confirm Password:</p>
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <button type="submit" class="btn">Register</button>
+                <a href="page.html" class="btn register-btn">Login</a>
                 
             </form>
         </div>
@@ -47,9 +34,11 @@
             <div class="toggle-panel toggle-left">
                 <h1>Welcome Back!</h1>
                 <p>Don't have an account?</p>
-                <button class="btn register-btn">Register</button>
+                <a href="studentregister.html" class="btn register-btn">Register Now</a>
             </div>
         </div>
+       
+        
     </div>
 </body>
 </html>
