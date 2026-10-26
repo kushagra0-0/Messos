@@ -1,78 +1,49 @@
-
-
-* {
-    font-family: sans-serif;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(lightgray, lightblue);
-}
-.container{
-    position: relative;
-    width: 850px;
-    height: 550px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px black;
-    overflow: hidden;
-
-}
-.form-box{
-    position: absolute;
-    right:0;
-    width: 50%;
-    height: 100%;
-    background: seagreen;
-    display:flex;
-    align-items:center;
-    text-align:center;
-
-}
-
-form{
-    
-    background: #fff;
-    width:75%;
-    border-radius:10px;
-}
-
-.site-logo{
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: 12px auto;
-}
-
-.input-box{
-    position: relative;
-    margin: 10px 0;
-}
-.btn{
-    width: 55%;
-    height:25px;
-    border-radius:10px;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px outset buttonborder;
-    background: buttonface;
-    text-decoration: none;
-    color: black;
-}
-.toggle-box{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: #fff;
-    display:flex;
-    align-items:center;
-    text-align:center;
-}
- 
+    body {
+        font-family:  sans-serif;
+         background:  whitesmoke;
+         margin: 0;
+         }
+    h1 { background: seagreen;
+        color: white;
+         padding: 12px 20px;
+         font-size: 20px; 
+        }
+    main {
+         max-width: 800px;
+          margin: 20px auto;
+           padding: 0 12px;
+         }
+    .card { background: white;
+         border-radius: 10px;
+          padding: 16px;
+           margin-bottom: 16px;
+          box-shadow: 0 2px 8px lightgray;
+         }
+    table { width: 100%;
+         border-collapse: collapse; 
+        }
+    th, td {
+        text-align: left;
+        padding: 6px;
+        border-bottom:1px solid lightgray;
+     }
+    button { background: seagreen;
+         color: white; border: 0;
+          padding: 6px 12px;
+           border-radius: 6px; 
+           cursor: pointer;
+         }
+    .badge { padding: 2px 9px; 
+        border-radius: 10px; 
+        color: white;
+         font-size: 12px;
+         }
+    .open {
+         background: seagreen;
+         }
+    .locked {
+         background: darkorange;
+         }
+    .closed {
+         background: gray;
+        }
