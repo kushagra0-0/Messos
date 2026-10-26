@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MessOS  Admin</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1><img src="logo.jpg" height="30">MessOS - Admin</h1>
+
+
+  <main>
+ 
+    <div class="card">
+      <h2>Today's summary</h2>
+      <p>Students registered: <b id="numStudents">0</b></p>
+      <p>Meals today: <b id="numMeals">0</b></p>
+      <p>Students opted in (today): <b id="numOptedIn">0</b></p>
+      <p>Meals served (today): <b id="numServed">0</b></p>
+    </div>
+
+
+    <div class="card">
+      <h2>Add a meal</h2>
+      <form id="mealForm">
+        <input type="date" id="mDate" required>
+        <select id="mType">
+          <option>Breakfast</option>
+          <option>Lunch</option>
+          <option>Dinner</option>
+        </select>
+        <input type="text" id="mItems" placeholder="Menu items" required>
+        Serving starts: <input type="time" id="mStart" required>
+        Cut-off: <input type="time" id="mCutoff" required>
+        <button type="submit">Add</button>
+      </form>
+      <p id="mealMsg"></p>
+    </div>
+
+    <div class="card">
+      <h2>All meals</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Meal</th><th>Menu</th><th>Starts</th><th>Cut-off</th><th>Time left</th><th>Status</th><th></th></tr></thead>
+        <tbody id="mealRows"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Add a user</h2>
+      <form id="userForm">
+        <input type="text" id="uName" placeholder="Name" required>
+        <input type="email" id="uEmail" placeholder="name@mnnit.ac.in" required>
+        <input type="text" id="uReg" placeholder="Reg. no.">
+        <select id="uRole">
+          <option>student</option>
+          <option>staff</option>
+          <option>admin</option>
+        </select>
+        <button type="submit">Add user</button>
+      </form>
+      <p id="userMsg"></p>
+    </div>
+
+
+    <div class="card">
+      <h2>All users</h2>
+      <input type="text" id="search" placeholder="Search by name or email">
+      <table>
+        <thead><tr><th>Name</th><th>Email</th><th>Reg. no.</th><th>Role</th><th></th></tr></thead>
+        <tbody id="userRows"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="admin.js">
+  </script>
+</body>
+</html>
